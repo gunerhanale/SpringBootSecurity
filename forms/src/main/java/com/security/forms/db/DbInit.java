@@ -1,9 +1,9 @@
 package com.security.forms.db;
 
+import com.security.forms.model.User;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.security.forms.model.User;
 
 import java.util.Arrays;
 import java.util.List;
