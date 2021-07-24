@@ -17,10 +17,7 @@ public class Permission {
     private String name;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "allowedRoles")
+    @ManyToMany(mappedBy = "allowedPermission")
     private Set<Role> roles = new HashSet<>();
-
-
-
 
 }

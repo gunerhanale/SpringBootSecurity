@@ -20,12 +20,13 @@ public class User {
 
     private int active;
 
+    private String roles = "";
+
+    private String permissions = "";
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "role_id", referencedColumnName = "id")
     private Role role;
-
-    private String roles = "";
-    private String permissions = "";
 
     public User(String username, String password, String roles, String permissions){
         this.username = username;
